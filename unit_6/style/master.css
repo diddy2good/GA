@@ -157,24 +157,31 @@ h2 {
 
 #intro{
   background-color: #ddd;
-
+  position: relative;
+  overflow: auto;
 }
 
 #intro .wrapper{
-  padding: 16px;
+  padding: 3em 1em;
   overflow: auto;
   position: relative;
 }
 
 #intro img{
-  width: 45%;
-  float: left;
+  width: 30%;
+  margin-right: 5%;
+
   border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #intro div div{
-  margin-left: 50%;
-  margin-top: 7.5%;
+  width: 60%;
+  float: right;
+
 }
 
 #intro h1{
@@ -182,7 +189,7 @@ h2 {
 }
 
 #intro p{
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
 }
 
 
