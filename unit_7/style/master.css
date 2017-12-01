@@ -165,11 +165,10 @@ h2 {
   background-color: #ddd;
   background-image: url("../images/Homepage/fresh_snow.png");
   background-repeat: repeat;
-  min-height: 70vh;
 }
 
 #intro .wrapper{
-  padding: 16px;
+  padding: 2em 1em;
   overflow: auto;
 
 }
