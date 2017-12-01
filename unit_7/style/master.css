@@ -1,0 +1,337 @@
+/*Master CSS*/
+
+/*FONT IMPORT*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+/*Global override*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Font Control*/
+
+body {
+  color: #26485a;
+  background-color: #0e597f;
+  font-size: 1.1em;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 .logo {
+  font-family: 'Lato', Helvetica, "Arial Black", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  padding-top: .5em;
+}
+
+p {
+  line-height: 1.6em;
+  padding-bottom: .5em;
+}
+
+label {
+  font-size: 1em;
+}
+
+a {
+
+}
+
+/*END OF FONT CONTROL*/
+
+/*General*/
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.cta, input[type=submit] {
+  margin-top: 1em;
+  font-weight: 300;
+  text-decoration: none;
+  background: linear-gradient(#65a8cc, #327ba2);
+  box-shadow: 0px 2px 0px #0d587f, inset 0px 2px 0px #84c2e4;
+  border: solid 1px #186f8f;
+  color: #fff;
+  padding: .6em 2em;
+  display: inline-block;
+  border-radius: 10px;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+  font-size: 1.1em;
+}
+
+.cta:active, input[type=submit]{
+  background: linear-gradient( #327ba2,#65a8cc);
+}
+.cta:focus, input[type=submit]:focus{
+  background: linear-gradient( #327ba2,#65a8cc);
+  outline: none;
+  box-shadow: 0px 2px 0px #0d587f, inset 0px 2px 0px #84c2e4,0px 0px 20px #0e587e;
+}
+
+.headerbar {
+  width: 100%;
+  background-color: #0e597f;
+}
+
+.headerbar h2, .headerbar p{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+}
+
+/*End of General*/
+
+/*HEADER*/
+
+header{
+  color: #fff;
+  overflow: auto;
+  position: relative;
+}
+
+.logo{
+  font-size: 2em;
+  line-height: 1.5em;
+  display: inline-block;
+  padding-left: 16px;
+  padding-bottom: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav{
+  float: right;
+
+}
+
+nav a {
+  padding: 1.5em 1em;
+  line-height: 1.5em;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #65a8cc;
+  color: #ddf3ff;
+}
+
+/*END OF HEADER*/
+
+/*MAIN*/
+
+/*MAIN GENERAL*/
+
+main {
+  background-color: #fff;
+}
+
+h2 {
+  color: #fff;
+  padding: 16px 0px;
+}
+
+
+/*END OF MAIN GENERAL*/
+
+/*INTRO*/
+
+#intro{
+  background-color: #ddd;
+  background-image: url("../images/Homepage/fresh_snow.png");
+  background-repeat: repeat;
+  min-height: 70vh;
+}
+
+#intro .wrapper{
+  padding: 16px;
+  overflow: auto;
+
+}
+
+#intro img{
+  width: 45%;
+  float: left;
+  border-radius: 50%;
+}
+
+#intro div div{
+  float: right;
+  width: 50%;
+
+  }
+
+#intro h1{
+  margin-bottom: 5%;
+}
+
+#intro p{
+  margin-bottom: 5%;
+}
+
+
+
+/*END OF INTRO*/
+
+/*EXAMPLES*/
+#examples .wrapper{
+  padding: 2em 1em ;
+  overflow: auto;
+  position: relative;
+}
+
+#examples .wrapper img{
+  width: 45%;
+  margin-right: 5%;
+  float: left;
+}
+#examples .wrapper div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+#examples section:nth-of-type(odd) .wrapper div{
+  left: 1em;
+  width: 50%;
+}
+
+#examples section:nth-of-type(odd) img{
+  float: right;
+  margin-right: 0%;
+  margin-left: 5%;
+}
+
+
+#examples section{
+  border-bottom: 10px dotted #0e597f;
+}
+#examples section:last-child{
+  border-bottom: none;
+}
+
+/*#examples section:nth-child(odd){
+  background-color: #eee;
+}
+#examples section:nth-child(even){
+  background-color: #ddd;
+}*/
+
+
+
+/*END OF EXAMPLES*/
+
+
+/*ABOUT*/
+#about .wrapper{
+  padding: 3em 1em;
+  overflow: auto;
+}
+
+
+#about .wrapper img{
+  width: 45%;
+  float: left;
+}
+#about .wrapper div{
+  margin-left: 50%;
+}
+/*END OF ABOUT*/
+
+/*CONTACT*/
+
+
+
+/*FORM*/
+
+#contact .wrapper{
+  padding: 3em 1em;
+  overflow: auto;
+
+}
+
+#contact p{
+  width: 30em;
+}
+
+
+
+
+form {
+  padding-top: 1em;
+  width: 50%;
+}
+
+label {
+  display: block;
+  width: 5em;
+  font-size: 1em;
+  padding-top: 1em;
+}
+form label:first-of-type{
+  padding-top: 0;
+}
+
+label, input, textarea {
+  margin-bottom: .1em;
+  display: block;
+}
+
+input, textarea {
+  padding:1em;
+  border: 1px solid #0d587f;
+  width: 100%;
+  font-size: .7em;
+}
+
+input:focus, textarea:focus{
+  outline-color: ddf3ff;
+}
+textarea {
+  vertical-align: top;
+}
+
+input[type=submit] {
+  border: none;
+  height: inherit;
+  width: inherit;
+}
+
+/*FORM*/
+
+/*END OF CONTACT*/
+
+/*FOOTER*/
+
+footer p {
+  color: #fff;
+  padding: 16px ;
+}
+
+/*END OF FOOTER */
