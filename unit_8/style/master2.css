@@ -319,6 +319,13 @@ nav a{
   padding: 1em 2em;
 }
 
+.cta{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
   h1{
     margin-bottom: 1em;
   }
