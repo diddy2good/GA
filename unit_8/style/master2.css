@@ -1,0 +1,370 @@
+/*Master CSS*/
+
+/*FONT IMPORT*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+/*Global override*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Font Control*/
+
+body {
+  color: #26485a;
+  background-color: #0e597f;
+  font-size: 1.1em;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 .logo {
+  font-family: 'Lato', Helvetica, "Arial Black", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h1 span{
+  display: inline-block;
+}
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.6em;
+
+}
+
+h3 {
+  font-size: 1.6em;
+  line-height: 1.4em;
+  padding-top: .5em;
+  margin-bottom: .5em;
+}
+
+p {
+  line-height: 1.6em;
+  padding-bottom: .5em;
+}
+
+p.logo{
+  font-size: 2em;
+  padding-bottom: 0;
+}
+label {
+  font-size: 1em;
+}
+nav a{
+  font-size: .75em;
+  line-height: 2.5em;
+}
+a {
+
+}
+
+.cta, input[type=submit] {
+  margin-top: 1em;
+  font-weight: 300;
+  text-decoration: none;
+  background: linear-gradient(#65a8cc, #327ba2);
+  box-shadow: 0px 2px 0px #0d587f, inset 0px 2px 0px #84c2e4;
+  border: solid 1px #186f8f;
+  color: #fff;
+  padding: .6em 2em;
+  display: inline-block;
+  border-radius: 10px;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+  font-size: 1.1em;
+}
+
+.cta:active, .cta:hover, input[type=submit]{
+  background: linear-gradient( #327ba2,#65a8cc);
+}
+.cta:focus, input[type=submit]:focus{
+  background: linear-gradient( #327ba2,#65a8cc);
+  outline: none;
+  box-shadow: 0px 2px 0px #0d587f, inset 0px 2px 0px #84c2e4,0px 0px 20px #0e587e;
+}
+
+/*END OF FONT CONTROL*/
+
+/*General*/
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  /*Use the padding below to contstrict within wrapper*/
+  padding: 0 5% ;
+}
+
+/*End of General*/
+
+/*HEADER*/
+
+header{
+  background-color: #26485a;
+  color: #fff;
+}
+
+header .logo{
+  width: 50%;
+  float: left;
+}
+
+header nav{
+  float: right;
+
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 1em;
+  color: #fff;
+}
+nav a:hover {
+  background-color: #65a8cc;
+  color: #ddf3ff;
+}
+
+/*END OF HEADER*/
+
+/*MAIN*/
+
+/*MAIN GENERAL*/
+
+main{
+  background-color: #fff;
+  color: #000;
+}
+
+.headerbar {
+  background-color: #0e597f;
+  color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+main div.wrapper{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#examples section{
+  border-bottom: 10px dotted #0e597f;
+}
+#examples section:last-child{
+  border-bottom: none;
+}
+
+/*END OF MAIN GENERAL*/
+
+/*INTRO*/
+
+#intro{
+  /*height: 70vh;*/
+}
+
+
+#intro img{
+  width: 40%;
+  float: left;
+  border-radius: 100%;
+}
+
+#intro .wrapper div{
+  width: 45%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+}
+
+/*END OF INTRO*/
+
+/*EXAMPLES*/
+#examples section .wrapper{
+  /*width: 70%;*/
+}
+#examples img{
+  width: 40%;
+  float: left;
+}
+
+#examples .wrapper div{
+  width: 50%;
+  float: right;
+  /*position: absolute;
+  top: 50%;
+  transform: translateY(-50%);*/
+  /*left: 45%;*/
+}
+
+/*For the even examples*/
+#examples section:nth-of-type(even) img{
+  float: right;
+  /*margin-right: 5%;*/
+}
+#examples section:nth-of-type(even) .wrapper div{
+  /*left: 0;*/
+  float: left;
+}
+
+/*END OF EXAMPLES*/
+
+/*ABOUT*/
+
+#about img{
+  width: 40%;
+  float: left;
+}
+
+#about .wrapper div{
+  width: 50%;
+  float: right;
+}
+
+/*END OF ABOUT*/
+
+/*CONTACT*/
+
+/*FORM*/
+
+form, #contact p{
+  width: 50%;
+}
+label, input, textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: .1em;
+}
+
+label{
+  padding-top: 1em;
+}
+input, textarea{
+  font-size: .7em;
+  border: 1px solid #0d587f;
+  padding: 1em;
+}
+textarea{
+  height: 180px;
+}
+
+input[type=submit]{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+/*FORM*/
+
+/*END OF CONTACT*/
+
+/*FOOTER*/
+
+/*END OF FOOTER */
+
+.clearfix:after, .wrapper:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 1000px) {
+  #intro .wrapper div{
+    position: initial;
+    top: initial;
+    transform: initial;
+    left: initial;
+    float: right;
+    width: 50%;
+    margin-top: -2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  body{
+    font-size: 1em;
+  }
+
+  header .logo{
+    width: initial;
+    float: none;
+    text-align: center;
+  }
+  header nav{
+    float: none;
+    text-align: center;
+  }
+
+nav a{
+  padding: 1em 2em;
+}
+
+  h1{
+    margin-bottom: 1em;
+  }
+
+  h2{
+    text-align: center;
+  }
+
+  #intro img, #examples img, #about img{
+    width: 75%;
+    float: none;
+    margin: 0 auto 5%;
+    display: block;
+  }
+
+  #about img{
+    width: 100%;
+  }
+  #intro .wrapper div, #examples .wrapper div, #about .wrapper div{
+    position: initial;
+    top: initial;
+    transform: initial;
+    left: initial;
+    float: none;
+    width: 75%;
+    margin-top: -2%;
+    margin: 0 auto;
+  }
+
+  #examples .wrapper div, #about .wrapper div{
+    text-align: justify;
+  }
+
+  #examples img{
+    width: 40%;
+  }
+  #examples section:nth-of-type(even) img{
+    float: none;
+  }
+  #examples section:nth-of-type(even) .wrapper div{
+    float: none;
+  }
+
+
+  form, #contact p{
+    width: 100%;
+  }
+
+
+}
