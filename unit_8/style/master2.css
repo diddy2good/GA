@@ -110,7 +110,6 @@ a {
 /*HEADER*/
 
 header{
-  background-color: #26485a;
   color: #fff;
 }
 
@@ -303,7 +302,9 @@ input[type=submit]{
   body{
     font-size: 1em;
   }
-
+  .wrapper{
+    padding: 0;
+  }
   header .logo{
     width: initial;
     float: none;
@@ -336,13 +337,13 @@ nav a{
   #about img{
     width: 100%;
   }
-  #intro .wrapper div, #examples .wrapper div, #about .wrapper div{
+  #intro .wrapper div, #examples .wrapper div, #about .wrapper div, #contact .wrapper{
     position: initial;
     top: initial;
     transform: initial;
     left: initial;
     float: none;
-    width: 75%;
+    width: 90%;
     margin-top: -2%;
     margin: 0 auto;
   }
