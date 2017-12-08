@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Daniel Monroe Design Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style/master.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <p class="logo"><a href="index.html">Daniel Monroe Design</a></p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#examples">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="project-container">
+
+      <section>
+        <div class="wrapper">
+          <img src="images/Homepage/test.png" alt="Work Example cover photo" class="cover-photo">
+          <h1>User Segmentation</h1>
+          <h2>Employer: Big Fish Games</h2>
+
+
+
+          <p>Due to NDA compliance, key information regarding Big Fish Games will be omitted.</p>
+          <p>The marketing team creates and submits their own marketing campaign using Big Fish Games services. While this feature is functional, this particular area of the tool was being reenvisioned by the UX team. The User Segmentation feature is embedded into two different messaging channels and as a stand alone feature. The user can select, create, and edit different user segments.</p>
+
+          <h3>The Hypotheses</h3>
+          <p class="list-header">When inspecting the user segmentation feature of the tool, it was discovered that there was a list of inconsistencies:</p>
+          <ul>
+            <li>Different user segmentation critera based off messaging channels</li>
+            <li>Available criteria appeared in one dropdown with zero sense of sorting</li>
+            <li>Saved segments for Messaging channel A could not be used in channel B</li>
+            <li>Channel A  allows you to gauge the approximate users, while Channel B did not</li>
+          </ul>
+
+         <p>Another issue was that there was a short list of stakeholder criteria requests. While not an issue, there wasn't any use cases part of the request and typically each request came from one person. This made it difficult to gauge the usefullness across all marketers/games.</p>
+
+         <h3>Meet with the stakeholders</h3>
+         <p>Before I start designing a feature, I need to sit down with stakeholders individually and identify what users like and dislike about this particular feature. If anything I needed to see someone else use the feature other than myself.</h3>
+
+         <p>After meeting with the stakeholders a few of my hypothesis were correct.</p>
+
+         <p>Users expected that a user segmentation tool should be universal across all channels, and the dropdown of criteria was difficult to navigate and was requested to alphabetize.</p>
+
+         <p>The users also mentioned what they appreciated about the design, the approximate users per segmentation, the ability to create a segment on the fly in Channel A. When I asked about channel B, they said they have to create the segment before entering creating a message for Channel A because the channel only allowed you to select a segment and not create a segment.</p>
+         <p>I found this insight very interesting.</p>
+
+         <p>To cap off the meetings, there was always a mention for new criteria to be added.</p>
+
+         <h3>Card sorting</h3>
+
+         <p>With the mention of new criterias and unifying the segment feature, this would have put the list of criteria well over 15. These criteria were also difficult to understand due to the language, for example a few criteria were contextual to time, device, demographic, and purchases.</p>
+         <p>To get to the bottom of this, I created a list of the existing criteria, some new ones based off some competitive analysis and brief research, and blank post-its to allow any individual to to the list.</p>
+
+         <p>Each card would identify the name, condition, input type, and description of the criteria. This information would help the engineering with the request while it would also force the stakeholder to think about what their requesting and a practical user case.</p>
+
+         <p>The meeting room I conducted these card sorting exercises I used a large white board. The whiteboard would be divided into 5 categories for the stakeholders to sort their cards into. These categories weren't final and I encouraged each stakeholder to rename them if they felt it was necessary. Within each category there would be 3 groups; Must Have, Nice to Have, Do not need.</p>
+
+         <p>For each stakeholder I would conduct a dry run for a single card to assure they understand what I am requesting of them. After my demonstration, my goal was to sit back and watch these stakeholders organize the criteria. While my interactivity wasn't directly needed during the exercise, I would field any questions to any cards that were confusing (while making a note to possibly update later), and write down any new criteria suggested by a stakeholder.</p>
+         <p>After each card sort, I would snap a picture of everyones completed card sort.</p>
+
+         <h3>Compiling data</h3>
+          <p class="list-header">Next comes the fun part, compiling the data to see what we learned. Using an excell spreadsheet I will go over each stakeholders card sort.</p>
+          <ul>
+          <li>First is to transfer the data from the pictures to the spreadsheet. I would do this by containing the information on a per stakeholder</li>
+          <li>Second was to compile on a per criteria basis to identify the request level for that particular criteria. With this group I could identify that these particular criteria are of interest to the stakeholders</li>
+          <li>Third from the requested criteria, filter out what already exists and submit the remaining to the developers to start implementing</li>
+          <li>Fourth cross compile the card sorting groups and identify a final resting location for each critera that made the previous cut</li>
+        </ul>
+
+         <h3>Applying data to designs</h3>
+         <p>At this point I have a request to our engineers to add new criteria. Next is to apply what I learned to begin drafting up a concept wireframe.</p>
+
+         <p>For our designs, we utilize a bootstrap framework, which makes creating wireframes pretty simple and a moderate fidelity.</p>
+
+         <p class="list-header">Through out the design I encountered a few technical limitations:</p>
+         <ul>
+         <li>Unable to show approx users for Channel A.</li>
+           <li>Solution: Review and iterate on the helper text to explain to the user that the approx user only works for Channel B.</li>
+           <li>Why? Even though it would be extremely nice to identify how many users could be identified in Channel A, it wasn't feesable because of the approach to returning that particular data.</li>
+         </ul>
+         <p class="list-header">Channel A required a saved segment and couldn't use an on-the-fly segment featured in Channel B.</p>
+         <ul>
+           <li>Solution: Review with Engineering on possible options and how possible solutions could reflect on the user experience. After some further research from the engineering side, a tech solution was found. I was able to take the tech solution and adjust the design to compliment the tech approach.</li>
+           <li>Why? Reworking the design to compliment the solution was the cheaper approach to an existing service. Requesting a change to the service was too expensive and would derail up to a year of projects.</li>
+         </ul>
+
+         <h3>Results</h3>
+         <p>In the end, I submitted a new User Segmentation design to be applied to the messaging channels. Once the messaging channel redesigns were implemented I reached out to the stakeholders to gauge their feedback. For the most part it was well received. Only a few more requests were mentioned, but these requests were best suited for the next iteration as it would have expanded the scope too much.</p>
+
+
+
+         <h3>Conclusion</h3>
+         <p>In conclusion, utilizing a card sorting exercise helped tremendously when gathering feedback from stakeholders when trying to identify what they're looking for, where it is expected to be found, and if it's what they need.</p>
+         <p>During the card sort, I was also able to connect with the stakeholders and identify what their needs were. Having the personal interaction made their requests much more memorable and we even identified new wants/needs.</p>
+
+
+
+        Graphics needed
+        Original design
+        Card sort pictures
+        Excel sheet organization
+        Final Design
+
+
+
+        </div>
+      </section>
+
+    </section>
+  </main>
+  <footer class="headerbar">
+    <p class="wrapper">Daniel Monroe &copy;2017</p>
+  </footer>
+</body>
+
+</html>
