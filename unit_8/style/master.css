@@ -336,12 +336,6 @@ input[type=submit]{
   padding-bottom: 1em;
 }
 
-
-
-#project-container h4, #project-container p{
-  padding-left: 5%;
-}
-
 #project-container .fake-url{
   color: blue;
   text-decoration: underline;
@@ -401,7 +395,7 @@ figure figcaption{
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
 
   body{
     font-size: 1em;
